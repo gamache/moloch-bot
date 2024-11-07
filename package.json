@@ -1,14 +1,14 @@
 {
   "name": "moloch-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Moloch whose love is endless oil and stone!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Highs! Epiphanies! Despairs!\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["moloch"],
+  "author": "Allen Ginsberg et al",
+  "license": "Ten years' animal screams and suicides!",
   "type": "module",
   "dependencies": {
     "masto": "^6.10.1"
