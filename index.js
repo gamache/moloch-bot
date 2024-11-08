@@ -1,7 +1,7 @@
 import { createRestAPIClient } from "masto";
 import { readFileSync } from "fs";
 
-const INTERVAL = 30 * 60 * 1000; // 30 minutes
+const BASE_INTERVAL = 30 * 60 * 1000; // 30 minutes
 const MOLOCHS = readFileSync("README.txt").toString().trim().split("\n");
 
 let index = 0;
@@ -22,7 +22,8 @@ async function post() {
 }
 
 async function postAndSchedule() {
-  setTimeout(async () => await postAndSchedule(), INTERVAL);
+  const interval = parseInt(BASE_INTERVAL * (1 + Math.random()));
+  setTimeout(async () => await postAndSchedule(), interval);
   await post();
 }
 
